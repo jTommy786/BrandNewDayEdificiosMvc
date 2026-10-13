@@ -1,0 +1,50 @@
+﻿@model BrandNewDayEdificiosMvc.Models.Edificio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Edificio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Barrio.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Barrio.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peligro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peligro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vigilante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vigilante)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EdificioId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
