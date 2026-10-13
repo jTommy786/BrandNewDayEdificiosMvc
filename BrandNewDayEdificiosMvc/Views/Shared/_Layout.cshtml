@@ -3,24 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Sistema Edificios NY</title>
-
-    <!-- CSS de Bootstrap 5 desde CDN -->
-    <link href="https://jsdelivr.net" rel="stylesheet" />
-
-    <style>
-        /* Ajuste estético para el pie de página */
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .content-wrapper {
-            flex: 1;
-        }
-    </style>
+    <title>@ViewBag.Title - Mi Aplicación ASP.NET</title>
+    
+    <!-- Enlaces directos a los archivos locales por defecto de Visual Studio -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    
+    @Scripts.Render("~/bundles/modernizr")
 </head>
+
 <body>
 
     <!-- Menú de Navegación solicitado con Bootstrap 5 -->
